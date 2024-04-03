@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    .navbar-nav .nav-link:hover {
+      background-color: #9ccdff; /* Change to desired background color */
+    }
+    .navbar-nav .nav-link{
+      color: aliceblue;
+    }
+    #nav-icon{
+      position: relative;
+      height: 40px;
+      width: 50px;
+    }
+    .navbar-brand{
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      
+    }
+    #navmain{
+      background-color: rgb(9, 9, 18);
+    }
+    #navmainfont{
+      color: beige;
+    }
+    #card-head{
+        background-color: rgb(9, 9, 18);
+        color: aliceblue;
+    }
+    #submitbtn{
+        background-color: rgb(9, 9, 18);
+        color: aliceblue;
+    }
+  </style>
+<body>
+    <nav class="navbar navbar-expand-lg " id="navmain">
+        <div class="container">
+          <!-- Navbar brand -->
+          <a class="navbar-brand" href="#"><img id="nav-icon" src="C:\xampp\htdocs\pricing_web_internship\TECH BUDDY.png"> <b id="navmainfont">TECH BUDDY</b></a>
+          <!-- Navbar toggler button for mobile -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="inex.html">Home</a>
+              </li>
+            </ul>
+            <!-- Login and Sign in -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="registration.html">Sign in</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+    <div class="container">
+        <div class="row justify-content-center h-100">
+            <div class="card w-25 my-auto shadow" id="card">
+            <div class="card-header text-center white-text" id="card-head">
+                Login form
+            </div>
+            <div class="card-body">
+                <form action="login.php" method="post">
+                    <div class="form-group">
+                        <label for="id">ID/EMAIL:</label>
+                        <input class="form-control" name="email" id="id" placeholder="enter id/email" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">PASSWORD:</label>
+                        <input type="password" id="password" name="password" placeholder="enter password" class="form-control">
+                    </div>
+                    <button class="btn btn-block" id="submitbtn" type="submit">Login</button>
+
+                    <div class="card-footer text-right">
+                        <small>&copy;akki</small>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
